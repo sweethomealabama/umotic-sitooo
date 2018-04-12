@@ -112,7 +112,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/img.jpg" alt=""><?php echo "$nomeUtente $cognomeUtente" ?> 
+                    <img src="images/img.jpg" alt="">
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -207,42 +207,42 @@
             <form id="modifica_profilo" method="post" action="modifica_Utente_query.php">
                 
               <div>
-                <input type="text" class="form-control" placeholder="Nome" required="" name="nome" readonly="readonly" value="<?php echo $nomeUtente;?>"/>
+                <input type="text" class="form-control" placeholder="Nome" required="" name="nome" readonly="readonly" value=""/>
                 <input type="text" class="form-control" placeholder="Inserisci un nuovo Nome" name="nomeNuovo"/>
               </div>
               <br>
               <div>
-                <input type="text" class="form-control" placeholder="Cognome" required="" name="cognome" readonly="readonly" value="<?php echo $cognomeUtente;?>"/>
+                <input type="text" class="form-control" placeholder="Cognome" required="" name="cognome" readonly="readonly" value=""/>
                 <input type="text" class="form-control" placeholder="Inserisci un nuovo Cognome" name="cognomeNuovo"/>
               </div>
               <br>
               <div>
-                <input type="text" class="form-control" placeholder="Username" required="" name="username" readonly="readonly" value="<?php echo $usernameUtente;?>">
+                <input type="text" class="form-control" placeholder="Username" required="" name="username" readonly="readonly" value="">
                 <input type="text" class="form-control" placeholder="Inserisci un nuovo Username" name="usernameNuovo"/>
               </div>
               <br>
               <div>
-                <input type="password" class="form-control" placeholder="Password" required="" name="passwordUtente" readonly="readonly" value="<?php echo $passwordUtente;?>" />
+                <input type="password" class="form-control" placeholder="Password" required="" name="passwordUtente" readonly="readonly" value="" />
                 <input type="password" class="form-control" placeholder="Inserisci una nuova Password" name="passwordNuova"/>
               </div>
               <br>
               <div>
-                <input type="text" class="form-control" placeholder="Codice Fiscale" required="" name="codiceFiscale" readonly="readonly" value="<?php echo $codiceFiscaleUtente;?>"/>
+                <input type="text" class="form-control" placeholder="Codice Fiscale" required="" name="codiceFiscale" readonly="readonly" value=""/>
                 <input type="text" class="form-control" placeholder="Inserisci un nuovo Codice Fiscale" name="codiceFiscaleNuovo"/>
               </div>
               <br>
               <div>
-                <input type="date" class="form-control" placeholder="Data di nascita" required="" name="dataDiNascita" readonly="readonly" value="<?php echo $dataDiNascitaUtente;?>"/>
+                <input type="date" class="form-control" placeholder="Data di nascita" required="" name="dataDiNascita" readonly="readonly" value=""/>
                 <input type="date" class="form-control" placeholder="Inserisci una nuova Data di nascita" name="dataDiNascitaNuova"/>
               </div>
               <br>
               <div>
-                <input type="tel" class="form-control" placeholder="Telefono" required="" name="telefono" readonly="readonly" value="<?php echo $telefonoUtente;?>"/>
+                <input type="tel" class="form-control" placeholder="Telefono" required="" name="telefono" readonly="readonly" value=""/>
                 <input type="tel" class="form-control" placeholder="Inserisci un nuovo numero di Telefono" name="telefonoNuovo"/>
               </div>
               <br>
               <div>
-                <input type="email" class="form-control" placeholder="Email" required="" name="email" readonly="readonly" value="<?php echo $emailUtente;?>"/>
+                <input type="email" class="form-control" placeholder="Email" required="" name="email" readonly="readonly" value=""/>
                 <input type="email" class="form-control" placeholder="Inserisci una nuova Email" name="emailNuova"/>
               </div>
                 
