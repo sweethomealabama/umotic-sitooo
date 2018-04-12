@@ -2,7 +2,7 @@
               
 
 <?php
-    include ("registration_Installatore.php");
+    include 'registration_Installatore.php';
     
     $nomeInstallatore = $_SESSION["nomeInstallatore"];
     $cognomeInstallatore = $_SESSION["cognomeInstallatore"];
