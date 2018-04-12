@@ -46,14 +46,7 @@
                 $codiceFiscaleInstallatore=$row["codiceFiscaleInstallatore"];
                 $passwordInstallatore=$row["passwordInstallatore"];
                 
-                $_SESSION["nomeInstallatore"] = ucfirst($nomeInstallatore);
-	            $_SESSION["cognomeInstallatore"]= ucfirst($cognomeInstallatore);
-	            $_SESSION["usernameInstallatore"]= $usernameInstallatore;
-	            $_SESSION["telefonoInstallatore"]= $telefonoInstallatore;
-	            $_SESSION["codiceFiscaleInstallatore"]= strtoupper($codiceFiscaleInstallatore);
-	            $_SESSION["dataDiNascitaInstallatore"]= $dataDiNascitaInstallatore;
-	            $_SESSION["emailInstallatore"]= $emailInstallatore;
-	            $_SESSION["passwordInstallatore"]= $passwordInstallatore;
+                
                 header("location: index_admin.php");
                 
             }
@@ -69,14 +62,7 @@
                     $codiceFiscaleInstallatore=$row["codiceFiscaleInstallatore"];
                     $passwordInstallatore=$row["passwordInstallatore"];
                     
-                    $_SESSION["nomeInstallatore"] = ucfirst($nomeInstallatore);
-	                $_SESSION["cognomeInstallatore"]= ucfirst($cognomeInstallatore);
-	                $_SESSION["usernameInstallatore"]= $usernameInstallatore;
-	                $_SESSION["telefonoInstallatore"]= $telefonoInstallatore;
-	                $_SESSION["codiceFiscaleInstallatore"]= strtoupper($codiceFiscaleInstallatore);
-	                $_SESSION["dataDiNascitaInstallatore"]= $dataDiNascitaInstallatore;
-	                $_SESSION["emailInstallatore"]= $emailInstallatore;
-	                $_SESSION["passwordInstallatore"]= $passwordInstallatore;
+                    
                     
                     
                     header("location: index_Installatore.php");
