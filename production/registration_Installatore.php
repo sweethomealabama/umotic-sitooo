@@ -42,13 +42,7 @@
     
         } else{
             
-			$query = mysqli_query($db, "INSERT INTO installatore (nomeInstallatore, cognomeInstallatore, usernameInstallatore, passwordInstallatore, codiceFiscaleInstallatore, dataDiNascitaInstallatore, telefonoInstallatore, emailInstallatore) VALUES ('$nomeInstallatore', '$cognomeInstallatore', '$usernameInstallatore', '$password', '$codiceFiscaleInstallatore', '$dataDiNascitaInstallatore', '$telefonoInstallatore', '$emailInstallatore')");
-			if($query)
-			{
-				$msg = "Sei stato registrato al sistema!";
-				echo $msg;
-				
-			}
+			
 		}
 	}
 ?>
