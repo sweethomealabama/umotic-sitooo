@@ -1,8 +1,8 @@
 <?php
 session_start();
-include ("db.php");	
+include 'db.php';	
 
-include("login_Installatore_query.php");
+include 'login_Installatore_query.php';
 
 ?>
 <!DOCTYPE html>
