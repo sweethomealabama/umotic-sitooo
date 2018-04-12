@@ -2,7 +2,7 @@
               
 
 <?php
-    include ("crea_formattazione_query.php");
+    include 'crea_formattazione_query.php';
     
     $nomeInstallatore = $_SESSION["nomeInstallatore"];
     $cognomeInstallatore = $_SESSION["cognomeInstallatore"];
