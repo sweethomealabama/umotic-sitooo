@@ -23,7 +23,7 @@
 		$dataDiNascitaUtente = mysqli_real_escape_string($db, $dataDiNascitaUtente);
 		$codiceFiscaleUtente = mysqli_real_escape_string($db, $codiceFiscaleUtente);
 		$telefonoUtente = mysqli_real_escape_string($db, $telefonoUtente);
-		$password = md5($passwordUtente);
+		$password = hash('ripemd160', $passwordUtente);
 		$codiceFiscaleUtente = strtoupper($codiceFiscaleUtente);
 		
 		
@@ -34,7 +34,7 @@
 
         if ($result->num_rows > 0) {
     
-        $msg = "Spiacente, questa email esiste gi‡...";
+        $msg = "Spiacente, questa email esiste gi√†...";
 			echo $msg;
 			header("location: registration_Utente.php");
     
