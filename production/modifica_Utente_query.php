@@ -84,14 +84,7 @@
 	        $emailUtente = $nuovaEmailUtente;
 	        $passwordUtente = $nuovaPasswordUtente;
 	        
-	        $_SESSION["nomeUtente"] = $nomeUtente;
-	        $_SESSION["cognomeUtente"] = $cognomeUtente;
-	        $_SESSION["usernameUtente"] = $usernameUtente;
-	        $_SESSION["telefonoUtente"] = $telefonoUtente;
-	        $_SESSION["codiceFiscaleUtente"] = $codiceFiscaleUtente;
-	        $_SESSION["dataDiNascitaUtente"] = $dataDiNascitaUtente;
-	        $_SESSION["emailUtente"] = $emailUtente;
-	        $_SESSION["passwordUtente"] = $passwordUtente;
+	       
 	        
 	    }
 	    else{
