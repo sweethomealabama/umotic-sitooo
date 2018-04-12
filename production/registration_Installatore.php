@@ -24,7 +24,7 @@
 		$dataDiNascitaInstallatore = mysqli_real_escape_string($db, $dataDiNascitaInstallatore);
 		$codiceFiscaleInstallatore = mysqli_real_escape_string($db, $codiceFiscaleInstallatore);
 		$telefonoInstallatore = mysqli_real_escape_string($db, $telefonoInstallatore);
-		$password = sha1($passwordInstallatore);
+		$password = hash('ripemd160', $passwordInstallatore);
 		$codiceFiscaleInstallatore = strtoupper($codiceFiscaleInstallatore);
 		
 		
