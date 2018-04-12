@@ -30,7 +30,7 @@
         
         $result = mysqli_query($db, $query);
         
-        echo mysqli_num_rows($result);
+        
 
         if ($result->num_rows > 0) {
     
