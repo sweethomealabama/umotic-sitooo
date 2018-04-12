@@ -33,14 +33,7 @@ include 'db.php';
         }else{
 
             
-			$query = mysqli_query($db, "INSERT INTO sensore (IDSensore, tipoSensore, marcaSensore) VALUES ('$ID', '$tipoSensore', '$marcaSensore')");
-			if($query)
-			{
-				$msg = "Sensore aggiunto al Sistema!";
-				
-                header("location: crea_sensore.php");
-                echo $msg;
-			}
+		
         }
 	    
 	 
