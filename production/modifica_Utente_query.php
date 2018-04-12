@@ -66,14 +66,6 @@
     		
 		
 	        
-	        $query = mysqli_query($db, "UPDATE utente SET nomeUtente = '$nuovoNomeUtente' WHERE emailUtente = '$emailUtente'" );
-	        $query = mysqli_query($db, "UPDATE utente SET cognomeUtente = '$nuovoCognomeUtente' WHERE emailUtente = '$emailUtente'" );
-	        $query = mysqli_query($db, "UPDATE utente SET emailUtente = '$nuovaEmailUtente' WHERE emailUtente = '$emailUtente'" );
-	        $query = mysqli_query($db, "UPDATE utente SET passwordUtente = '$nuovaPasswordUtente' WHERE emailUtente = '$emailUtente'" );
-	        $query = mysqli_query($db, "UPDATE utente SET dataDiNascitaUtente = '$nuovaDataDiNascita' WHERE emailUtente = '$emailUtente'" );
-	        $query = mysqli_query($db, "UPDATE utente SET codiceFiscaleUtente = '$nuovoCodiceFiscaleUtente' WHERE emailUtente = '$emailUtente'" );
-	        $query = mysqli_query($db, "UPDATE utente SET telefonoUtente = '$nuovotelefonoUtente' WHERE emailUtente = '$emailUtente'" );
-	        $query = mysqli_query($db, "UPDATE utente SET usernameUtente = '$nuovousernameUtente' WHERE emailUtente = '$emailUtente'" );
 	        
 	        $nomeUtente = ucfirst($nuovoNomeUtente);
 	        $cognomeUtente = ucfirst($nuovoCognomeUtente);
