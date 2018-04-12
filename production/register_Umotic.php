@@ -1,6 +1,6 @@
 <?php
-  include('server_Umotic.php');
-  include('errors_Umotic.php');
+  include 'server_Umotic.php';
+  include 'errors_Umotic.php';
   $nome = "";
   $cognome = "";
   $username = "";
