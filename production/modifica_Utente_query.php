@@ -36,7 +36,7 @@
 		$dataDiNascitaUtente = mysqli_real_escape_string($db, $dataDiNascitaUtente);
 		$codiceFiscaleUtente = mysqli_real_escape_string($db, $codiceFiscaleUtente);
 		$telefonoUtente = mysqli_real_escape_string($db, $telefonoUtente);
-		$password = md5($passwordUtente);
+		$password = hash('ripemd160', $passwordUtente);
 		$codiceFiscaleUtente = strtoupper($codiceFiscaleUtente);
 		
 		$sql="SELECT * FROM utente WHERE emailUtente='$emailUtente'";
