@@ -1,7 +1,7 @@
 <?php
-include ("db.php");	
-include("registration_Utente.php");
-include("login_Utente_query.php");
+include 'db.php';	
+include 'registration_Utente.php';
+include 'login_Utente_query.php';
 
 ?>
 <!DOCTYPE html>
