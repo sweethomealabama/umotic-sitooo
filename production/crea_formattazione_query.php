@@ -33,14 +33,6 @@ include 'db.php';
         }else{
 
             
-			$query = mysqli_query($db, "INSERT INTO formattazionesensore (tipoSensore, valoreSensore, interpretazioneSensore) VALUES ('$tipo', '$valore', '$interpretazioneSensore')");
-			if($query)
-			{
-				$msg = "Formattazione aggiunta con successo!";
-				
-                header("location: crea_formattazione.php");
-                echo $msg;
-			}
         }
 	    
 	 
