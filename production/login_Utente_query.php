@@ -44,14 +44,7 @@
                     $passwordUtente=$row["passwordUtente"];
                 
                     
-                    $_SESSION["nomeUtente"] = ucfirst($nomeUtente);
-	                $_SESSION["cognomeUtente"]= ucfirst($cognomeUtente);
-	                $_SESSION["usernameUtente"]= $usernameUtente;
-	                $_SESSION["telefonoUtente"]= $telefonoUtente;
-	                $_SESSION["codiceFiscaleUtente"]= strtoupper($codiceFiscaleUtente);
-	                $_SESSION["dataDiNascitaUtente"]= $dataDiNascitaUtente;
-	                $_SESSION["emailUtente"]= $emailUtente;
-	                $_SESSION["passwordUtente"]= $password;
+                    
                     
                     
                     header("location: index.php");
