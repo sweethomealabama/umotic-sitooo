@@ -40,12 +40,8 @@
     
         } else{
             
-			$query = mysqli_query($db, "INSERT INTO utente (nomeUtente, cognomeUtente, usernameUtente, passwordUtente, codiceFiscaleUtente, dataDiNascitaUtente, telefonoUtente, emailUtente)VALUES ('$nomeUtente', '$cognomeUtente', '$usernameUtente', '$password', '$codiceFiscaleUtente', '$dataDiNascitaUtente', '$telefonoUtente', '$emailUtente')");
-			if($query)
-			{
-				$msg = "Sei stato registrato al sistema!";
-				echo $msg;
-			}
+			
+			
 		}
 	}
 ?>
