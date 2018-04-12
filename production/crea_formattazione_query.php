@@ -7,7 +7,7 @@ include 'db.php';
 
 
         $valore=$_POST["valore"];
-        
+        $tipo = $_POST["tipo"];
         $interpretazioneSensore=$_POST["interpretazione"];
 
         $valore = mysqli_real_escape_string($db, $valore);
