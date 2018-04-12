@@ -4,7 +4,7 @@
     
     session_start();
     
-    include("db.php");
+    include 'db.php';
     
     $nomeInstallatore = $_SESSION["nomeInstallatore"];
     $cognomeInstallatore = $_SESSION["cognomeInstallatore"];
@@ -162,7 +162,7 @@
                           <span class="time">3 mins ago</span>
                         </span>
                         <span class="message">
-                          O Raga vedete che la guinnes è buona, non capite niente...
+                          O Raga vedete che la guinnes Ã¨ buona, non capite niente...
                         </span>
                       </a>
                     </li>
@@ -314,12 +314,12 @@
                         <div class="block">
                           <div class="block_content">
                             <h2 class="title">
-                                              <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
+                                              <a>Who Needs Sundance When YouÂ’ve Got&nbsp;Crowdfunding?</a>
                                           </h2>
                             <div class="byline">
                               <span>13 hours ago</span> by <a>Jane Smith</a>
                             </div>
-                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
+                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, theyÂ’d pay to Fast-forward andÂ… <a>Read&nbsp;More</a>
                             </p>
                           </div>
                         </div>
@@ -328,12 +328,12 @@
                         <div class="block">
                           <div class="block_content">
                             <h2 class="title">
-                                              <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
+                                              <a>Who Needs Sundance When YouÂ’ve Got&nbsp;Crowdfunding?</a>
                                           </h2>
                             <div class="byline">
                               <span>13 hours ago</span> by <a>Jane Smith</a>
                             </div>
-                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
+                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, theyÂ’d pay to Fast-forward andÂ… <a>Read&nbsp;More</a>
                             </p>
                           </div>
                         </div>
@@ -342,12 +342,12 @@
                         <div class="block">
                           <div class="block_content">
                             <h2 class="title">
-                                              <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
+                                              <a>Who Needs Sundance When YouÂ’ve Got&nbsp;Crowdfunding?</a>
                                           </h2>
                             <div class="byline">
                               <span>13 hours ago</span> by <a>Jane Smith</a>
                             </div>
-                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
+                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, theyÂ’d pay to Fast-forward andÂ… <a>Read&nbsp;More</a>
                             </p>
                           </div>
                         </div>
@@ -356,12 +356,12 @@
                         <div class="block">
                           <div class="block_content">
                             <h2 class="title">
-                                              <a>Who Needs Sundance When You’ve Got&nbsp;Crowdfunding?</a>
+                                              <a>Who Needs Sundance When YouÂ’ve Got&nbsp;Crowdfunding?</a>
                                           </h2>
                             <div class="byline">
                               <span>13 hours ago</span> by <a>Jane Smith</a>
                             </div>
-                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and… <a>Read&nbsp;More</a>
+                            <p class="excerpt">Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, theyÂ’d pay to Fast-forward andÂ… <a>Read&nbsp;More</a>
                             </p>
                           </div>
                         </div>
