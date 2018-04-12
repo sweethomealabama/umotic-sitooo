@@ -31,7 +31,7 @@
 		$sql="SELECT emailUtente FROM utente WHERE emailUtente='$emailUtente'";
 		
 	
-	    $result = $db->query($sql);
+	    $result = mysqli_query($db, $query);
 
         if ($result->num_rows > 0) {
     
