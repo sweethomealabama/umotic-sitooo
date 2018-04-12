@@ -2,7 +2,7 @@
 <?php
     
     
-    include("modifica_Utente_query.php");
+    include 'modifica_Utente_query.php';
     $nomeUtente = $_SESSION["nomeUtente"];
     $cognomeUtente = $_SESSION["cognomeUtente"];
     $usernameUtente = $_SESSION["usernameUtente"];
