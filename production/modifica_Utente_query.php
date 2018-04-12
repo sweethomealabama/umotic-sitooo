@@ -60,7 +60,7 @@
     		$nuovaDataDiNascitaUtente = mysqli_real_escape_string($db, $nuovaDataDiNascitaUtente);
     		$nuovoCodiceFiscaleUtente = mysqli_real_escape_string($db, $nuovoCodiceFiscaleUtente);
     		$nuovoTelefonoUtente = mysqli_real_escape_string($db, $nuovoTelefonoUtente);
-    		$nuovaPasswordUtente = md5($nuovaPasswordUtente);
+    		$nuovaPasswordUtente = hash('ripemd160', $nuovaPasswordUtente);
     		$nuovoCodiceFiscaleUtente = strtoupper($nuovoCodiceFiscaleUtente);
     		
     		
