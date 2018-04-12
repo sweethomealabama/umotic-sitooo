@@ -32,7 +32,7 @@
 		$sql="SELECT emailInstallatore FROM installatore WHERE emailInstallatore='$emailInstallatore'";
 		
 	
-	    $result = $db->query($sql);
+	    $result = mysqli_query($db, $query);
 
         if ($result->num_rows > 0) {
     
