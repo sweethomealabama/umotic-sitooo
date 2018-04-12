@@ -1,7 +1,7 @@
 <?php ob_start(); ?>
 <?php
 session_start();
-include("db.php");
+include 'db.php';
 	
     if(isset($_POST["submit"])){
 
