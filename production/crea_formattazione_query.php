@@ -7,7 +7,7 @@ include 'db.php';
 
 
         $valore=$_POST["valore"];
-        $tipo=$_POST["tipo"];
+        
         $interpretazioneSensore=$_POST["interpretazione"];
 
         $valore = mysqli_real_escape_string($db, $valore);
@@ -22,7 +22,7 @@ include 'db.php';
         $sql="SELECT tipoSensore FROM formattazionesensore WHERE tipoSensore = '$tipo'";
 		
 	
-	    $result = $db->query($sql);
+	    $result = mysqli_query($db, $sql);
 
         if ($result->num_rows > 0) {
     
