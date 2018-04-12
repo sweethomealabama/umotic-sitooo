@@ -54,7 +54,7 @@
               <div class="profile_info">
                 <span>Benvenuto,</span>
                 <!--<h2>            </h2> -->
-                  <?php echo "<h2> $nomeUtente $cognomeUtente </h2>" ?> 
+                  
               </div>
             </div>
             <!-- /menu profile quick info -->
