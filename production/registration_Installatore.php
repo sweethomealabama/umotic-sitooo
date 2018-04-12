@@ -2,7 +2,7 @@
 <?php
     
 	session_start();
-	include("db.php");
+	include 'db.php';
 
 	$msg = "";
 	if(isset($_POST["submit"]))
