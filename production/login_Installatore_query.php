@@ -28,7 +28,7 @@
 		//$results = mysqli_query($db,$sql);
         //if (mysqli_num_rows($result) > 0) 
         
-        $result = $db->query($sql);
+        $result = mysqli_query($db, $query);
         
         echo mysqli_num_rows($result);
 
@@ -85,7 +85,7 @@
                 }
             }
         } else {
-            echo "Il tuo account non è registrato al Sistema, registrati ora!";
+            echo "Il tuo account non Ã¨ registrato al Sistema, registrati ora!";
         }
         
         mysqli_close($db);
