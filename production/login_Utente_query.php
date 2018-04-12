@@ -17,7 +17,7 @@
 		$passwordUtente = mysqli_real_escape_string($db, $passwordUtente);
 		$usernameUtente = mysqli_real_escape_string($db, $usernameUtente);
 	    
-	    $password = md5($passwordUtente);
+	    $password = hash('ripemd160', $passwordUtente);
 		
 		$sql="SELECT * FROM utente WHERE usernameUtente='$usernameUtente'";
 		
