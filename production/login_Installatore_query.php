@@ -17,7 +17,7 @@
 		$passwordInstallatore = mysqli_real_escape_string($db, $passwordInstallatore);
 		$usernameInstallatore = mysqli_real_escape_string($db, $usernameInstallatore);
 	    
-	    $password = hash('ripemd160', $passwordUtente);
+	    $password = hash('ripemd160', $passwordInstallatore);
 		
 		
 		$sql="SELECT * FROM installatore WHERE usernameInstallatore='$usernameInstallatore'";
