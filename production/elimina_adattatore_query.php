@@ -15,7 +15,7 @@
         
 
         $sql="DELETE FROM adattatore WHERE IDAdattatore = '$ID'";
-		$result = $db->query($sql);
+		
 
 
 		$sql="SELECT IDUtente FROM utente WHERE nomeUtente = 'Federico'";
@@ -46,12 +46,10 @@
 		$row=mysqli_fetch_assoc($result);
 		$IDI = $row["IDInstallatore"];
 		
-		$sql=mysqli_query($db, "UPDATE installazionesensore SET dataRimozione = '$data' WHERE IDAdattatore ='$IDA'");
-		$sql=mysqli_query($db, "UPDATE installazionesensore SET IDInstallatoreRimozione = '$IDI' WHERE IDAdattatore ='$IDA'");
+		
     
             
-            $query = mysqli_query($db, "UPDATE installazioneadattatore SET dataRimozione = '$data' WHERE IDAdattatore = '$ID'");
-            $query = mysqli_query($db, "UPDATE installazioneadattatore SET IDInstallatoreRimozione = '$IDI' WHERE IDAdattatore = '$ID'");
+            
 			header("location: elimina_adattatore.php");
 		}
 	
