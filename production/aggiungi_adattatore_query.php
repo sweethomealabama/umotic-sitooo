@@ -34,7 +34,6 @@
 		$IDS = $row["IDSensore"];
 
 		$sql="SELECT IDAdattatore FROM adattatore WHERE IDAdattatore = '$IDa'";
-		$result = $db->query($sql);
 
 		$row=mysqli_fetch_assoc($result);
 		$IDA = $row["IDAdattatore"];
@@ -47,7 +46,6 @@
         
     
             
-			$query = mysqli_query($db, "INSERT INTO installazioneadattatore (dataInstallazione, IDUtente, IDAdattatore, IDInstallatore, dataRimozione, IDInstallatoreRimozione)VALUES ('$data', '$ID', '$IDA', '$IDI', '', '')");
 			header("location: aggiungi_adattatore.php");
 		}
 	
