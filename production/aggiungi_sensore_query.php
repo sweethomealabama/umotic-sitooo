@@ -10,8 +10,14 @@
 	$msg = "";
 	if(isset($_POST["aggiungi"]))
 	{
+		$username = 'Federico';
+		$sql = sprintf(
+  "SELECT IDUtente FROM utente WHERE nomeUtente = '%s'",
+  mysqli_real_escape_string($dhb, $username),
+
+);
 		
-		$sql="SELECT IDUtente FROM utente WHERE nomeUtente = 'Federico'";
+		
 		$result = $db->query($sql);
 
 		$row=mysqli_fetch_assoc($result);
@@ -38,10 +44,23 @@
 
 		$row=mysqli_fetch_assoc($result);
 		$IDI = $row["IDInstallatore"];
+		
+		$dataR = "";
+		$IDIR = "";
         
+		$sql = sprintf(
+  			"INSERT INTO installazionesensore (dataInstallazione, IDSensore, IDAdattatore, IDInstallatore, dataRimozione, IDInstallatoreRimozione)VALUES ('%s', '%d', '%s', '%d', '%s', '%d')",
+  			mysqli_real_escape_string($dhb, $data),
+			mysqli_real_escape_string($dhb, $IDS),
+			mysqli_real_escape_string($dhb, $IDA),
+			mysqli_real_escape_string($dhb, $IDI),
+			mysqli_real_escape_string($dhb, $dataR),
+			mysqli_real_escape_string($dhb, $IDIR),
+
+);
     
             
-			$query = mysqli_query($db, "INSERT INTO installazionesensore (dataInstallazione, IDSensore, IDAdattatore, IDInstallatore, dataRimozione, IDInstallatoreRimozione)VALUES ('$data', '$IDS', '$IDA', '$IDI', '', '')");
+			
 			header("location: aggiungi_sensore.php");
 		}
 	
