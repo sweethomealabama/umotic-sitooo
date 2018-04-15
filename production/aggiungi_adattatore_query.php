@@ -15,7 +15,6 @@
         $nome = $_POST["nomeAdattatore"];
 
         $sql="INSERT INTO adattatore (IDAdattatore, nomeAmbiente) VALUES ('$IDa', '$nome')";
-		$result = $db->query($sql);
 
 
 		$sql="SELECT IDUtente FROM utente WHERE nomeUtente = 'Federico'";
