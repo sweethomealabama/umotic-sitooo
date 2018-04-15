@@ -23,7 +23,6 @@
 	
 	    
             
-			$query = mysqli_query($db, "INSERT INTO terzo (tipoTerzo, nomeTerzo, emailTerzo, IDUtente) VALUES ('0', $nomeTerzo, $emailTerzo, '4'");
 			
 		header("location: aggiungi_terzo.php");
 	}
