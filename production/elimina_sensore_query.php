@@ -15,7 +15,7 @@
         
 
         $sql="DELETE FROM sensore WHERE IDSensore = '$ID' AND marcaSensore='SMG'";
-		$result = $db->query($sql);
+		//$result = $db->query($sql);
 
 
 		$sql="SELECT IDUtente FROM utente WHERE nomeUtente = 'Federico'";
@@ -48,8 +48,8 @@
         
     
             
-            $query = mysqli_query($db, "UPDATE installazionesensore SET dataRimozione = '$data' WHERE IDSensore = '$ID'");
-            $query = mysqli_query($db, "UPDATE installazionesensore SET IDInstallatoreRimozione = '$IDI' WHERE IDSensore = '$ID'");
+            //$query = mysqli_query($db, "UPDATE installazionesensore SET dataRimozione = '$data' WHERE IDSensore = '$ID'");
+            //$query = mysqli_query($db, "UPDATE installazionesensore SET IDInstallatoreRimozione = '$IDI' WHERE IDSensore = '$ID'");
 			header("location: elimina_sensore.php");
 		}
 	
