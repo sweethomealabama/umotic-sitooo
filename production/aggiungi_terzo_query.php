@@ -1,47 +1,30 @@
 <?php ob_start(); ?>
 <?php
+
+	include ("db.php");
     
 	session_start();
 
 	$msg = "";
-	if(isset($_POST["aggiungiTerzo"]))
+	if(isset($_POST["aggiungi"]))
 	{
-		$nomeUtente = $_POST["nome"];
-		$emailUtente = $_POST["email"];
-		$passwordUtente = $_POST["password"];
-		$usernameUtente = $_POST["username"];
-		$cognomeUtente = $_POST["cognome"];
-		$dataDiNascitaUtente = $_POST["dataDiNascita"];
-		$codiceFiscaleUtente = $_POST["codiceFiscale"];
-		$telefonoUtente = $_POST["telefono"];
+		$nomeTerzo = $_POST["nometerzo"];
+		$emailTerzo = $_POST["mailterzo"];
+		
+		
 
-		$nomeUtente = mysqli_real_escape_string($db, $nomeUtente);
-		$emailUtente = mysqli_real_escape_string($db, $emailUtente);
-		$passwordUtente = mysqli_real_escape_string($db, $passwordUtente);
-		$usernameUtente = mysqli_real_escape_string($db, $usernameUtente);
-		$cognomeUtente = mysqli_real_escape_string($db, $cognomeUtente);
-		$dataDiNascitaUtente = mysqli_real_escape_string($db, $dataDiNascitaUtente);
-		$codiceFiscaleUtente = mysqli_real_escape_string($db, $codiceFiscaleUtente);
-		$telefonoUtente = mysqli_real_escape_string($db, $telefonoUtente);
-		$password = hash('ripemd160', $passwordUtente);
-		$codiceFiscaleUtente = strtoupper($codiceFiscaleUtente);
+		$nomeTerzo = mysqli_real_escape_string($db, $nomeTerzo);
+		$emailTerzo = mysqli_real_escape_string($db, $emailTerzo);
 		
 		
-		$sql="SELECT emailUtente FROM utente WHERE emailUtente='$emailUtente'";
+		
+		
 		
 	
-	    $result = $db->query($sql);
-
-        if ($result->num_rows > 0) {
-    
-        $msg = "Spiacente, questa email esiste già...";
-			echo $msg;
-			header("location: registration_Utente.php");
-    
-        } else{
+	    
             
+			$query = mysqli_query($db, "INSERT INTO terzo (tipoTerzo, nomeTerzo, emailTerzo, IDUtente) VALUES ('0', $nomeTerzo, $emailTerzo, '4'");
 			
-			
-		}
+		header("location: aggiungi_terzo.php");
 	}
 ?>
